@@ -2,8 +2,7 @@
 // SCHOOL ADMISSION PORTAL - script.js
 // ============================================================
 
-const API_URL = "http://localhost:3000";
-
+const API_URL = "https://school-admission-portal-yufh.onrender.com";
 // ============================================================
 // SEARCH STATE
 // ============================================================
