@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Record - Principal</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+
+</head>
+
+<body>
+
+
+    <!-- ================= NAVIGATION ================= -->
+
+    <header>
+
+        <nav>
+
+            <div class="logo">
+
+                <h2>ABC Public School</h2>
+
+            </div>
+
+            <ul class="nav-links">
+
+                <li>
+                    <a href="../index.html">Home</a>
+                </li>
+
+                <li>
+                    <a href="dashboard.html">Dashboard</a>
+                </li>
+
+                <li>
+                    <a href="login.html">Logout</a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+    <!-- ================= STUDENT RECORD ================= -->
+
+    <main>
+
+        <section class="section">
+
+            <h1>Student Application</h1>
+
+            <p>
+                Review the complete student application and
+                teacher recommendation before making the final decision.
+            </p>
+
+
+            <!-- ================= STUDENT INFORMATION ================= -->
+
+            <div class="step">
+
+                <h2>Student Information</h2>
+
+                <div id="principalStudentDetails">
+
+                    <p>
+                        Loading student information...
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- ================= TEACHER REVIEW ================= -->
+
+            <div class="step">
+
+                <h2>Teacher Review</h2>
+
+                <div id="teacherReviewDetails">
+
+                    <p>
+                        Loading teacher review...
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- ================= PRINCIPAL DECISION ================= -->
+
+            <div class="step">
+
+                <h2>Principal Decision</h2>
+
+                <form id="principalDecisionForm">
+
+                    <div class="form-group">
+
+                        <label for="principalDecision">
+                            Final Admission Decision
+                        </label>
+
+                        <select
+                            id="principalDecision"
+                            required
+                        >
+
+                            <option value="">
+                                Select Decision
+                            </option>
+
+                            <option value="Approved">
+                                Approve Admission
+                            </option>
+
+                            <option value="Rejected">
+                                Reject Admission
+                            </option>
+
+                            <option value="Needs Clarification">
+                                Needs Clarification
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="principalComments">
+                            Principal Remarks
+                        </label>
+
+                        <textarea
+                            id="principalComments"
+                            rows="5"
+                            placeholder="Enter your remarks"
+                            required
+                        ></textarea>
+
+                    </div>
+
+
+                    <button
+                        type="submit"
+                        class="btn"
+                    >
+                        Submit Final Decision
+                    </button>
+
+                </form>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <p>
+            &copy; 2026 ABC Public School.
+            All Rights Reserved.
+        </p>
+
+        <p>
+            Principal Admission Portal
+        </p>
+
+    </footer>
+
+
+    <script src="../js/script.js"></script>
+
+</body>
+
+</html>

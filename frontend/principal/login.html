@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Staff Login - Govt High School, Chikkabellikatti</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <header>
+        <nav>
+            <div class="logo">
+                <h2>Govt High School, Chikkabellikatti</h2>
+            </div>
+
+            <ul class="nav-links">
+                <li>
+                    <a href="../index.html">Home</a>
+                </li>
+
+                <li>
+                    <a href="../student/login.html">Student Login</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- STAFF LOGIN -->
+    <main>
+        <section class="login-section">
+            <div class="login-box">
+
+                <h1>Staff Login</h1>
+
+                <p>Login as Principal or Teacher</p>
+
+                <form id="staffLoginForm">
+
+                    <!-- SCHOOL NAME -->
+                    <div class="form-group">
+                        <label for="schoolName">School Name</label>
+
+                        <input
+                            type="text"
+                            id="schoolName"
+                            value="Govt High School, Chikkabellikatti"
+                            readonly
+                            required
+                        >
+                    </div>
+
+                    <!-- PLACE -->
+                    <div class="form-group">
+                        <label for="schoolPlace">Place</label>
+
+                        <input
+                            type="text"
+                            id="schoolPlace"
+                            value="Chikkabellikatti"
+                            readonly
+                            required
+                        >
+                    </div>
+
+                    <!-- SCHOOL CODE -->
+                    <div class="form-group">
+                        <label for="schoolCode">School Code</label>
+
+                        <input
+                            type="text"
+                            id="schoolCode"
+                            value="CKB105"
+                            readonly
+                            required
+                        >
+                    </div>
+
+                    <!-- USERNAME -->
+                    <div class="form-group">
+                        <label for="staffUsername">Username</label>
+
+                        <input
+                            type="text"
+                            id="staffUsername"
+                            placeholder="Enter username"
+                            autocomplete="username"
+                            required
+                        >
+                    </div>
+
+                    <!-- PASSWORD -->
+                    <div class="form-group">
+                        <label for="staffPassword">Password</label>
+
+                        <input
+                            type="password"
+                            id="staffPassword"
+                            placeholder="Enter password"
+                            autocomplete="current-password"
+                            required
+                        >
+                    </div>
+
+                    <!-- LOGIN BUTTON -->
+                    <button type="submit" class="btn">
+                        Login
+                    </button>
+
+                </form>
+
+                <p id="staffLoginMessage"></p>
+
+                <p class="register-link">
+                    Principal doesn't have an account?
+                    <a href="register.html">Register Principal</a>
+                </p>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>
+            &copy; 2026 Govt High School, Chikkabellikatti.
+            All Rights Reserved.
+        </p>
+
+        <p>Staff Admission Portal</p>
+    </footer>
+
+    <!-- JAVASCRIPT -->
+    <script src="../js/script.js"></script>
+
+</body>
+</html>

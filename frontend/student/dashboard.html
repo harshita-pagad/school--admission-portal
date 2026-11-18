@@ -1,0 +1,236 @@
+<!DOCTYPE html> 
+
+<html lang="en"> 
+
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+
+<title>Student Dashboard</title> 
+
+<link rel="stylesheet" href="../css/style.css"> 
+
+
+</head> 
+
+<body> 
+
+
+<header> 
+    <nav> 
+
+        <div class="logo"> 
+            <h2>Govt High School, Chikkabellikatti</h2> 
+        </div> 
+
+        <ul class="nav-links"> 
+
+            <li> 
+                <a href="dashboard.html">Dashboard</a> 
+            </li> 
+
+            <li> 
+                <a href="admission.html">Admission</a> 
+            </li> 
+
+            <li> 
+                <a href="status.html">Application Status</a> 
+            </li> 
+
+            <li> 
+                <a href="#" onclick="logout()">Logout</a> 
+            </li> 
+
+        </ul> 
+
+    </nav> 
+</header> 
+
+
+<section class="section"> 
+
+    <h1>Student Dashboard</h1> 
+
+    <p id="welcomeMessage"> 
+        Loading student information... 
+    </p> 
+
+
+    <div class="steps-container"> 
+
+        <!-- ADMISSION --> 
+
+        <div class="step"> 
+
+            <h3>📝 Admission Application</h3> 
+
+            <p> 
+                Fill in your personal and admission details. 
+            </p> 
+
+            <a href="admission.html" class="btn"> 
+                Apply for Admission 
+            </a> 
+
+        </div> 
+
+
+        <!-- STATUS --> 
+
+        <div class="step"> 
+
+            <h3>📊 Application Status</h3> 
+
+            <p> 
+                Check the current status of your application. 
+            </p> 
+
+            <a href="status.html" class="btn"> 
+                Check Status 
+            </a> 
+
+        </div> 
+
+
+        <!-- PROFILE --> 
+
+        <div class="step"> 
+
+            <h3>👤 Student Profile</h3> 
+
+            <p> 
+                View your registered student information. 
+            </p> 
+
+            <button class="btn" onclick="showProfile()"> 
+                View Profile 
+            </button> 
+
+        </div> 
+
+    </div> 
+
+
+    <!-- PROFILE INFORMATION --> 
+
+    <div 
+        id="profileBox" 
+        class="section" 
+        style="display:none;" 
+    > 
+
+        <h2>Student Information</h2> 
+
+        <p> 
+            <strong>Student ID:</strong> 
+            <span id="studentId"></span> 
+        </p> 
+
+        <p> 
+            <strong>Name:</strong> 
+            <span id="studentName"></span> 
+        </p> 
+
+        <p> 
+            <strong>Username:</strong> 
+            <span id="studentUsername"></span> 
+        </p> 
+
+    </div> 
+
+</section> 
+
+
+<footer> 
+
+    <p> 
+        &copy; 2026 Govt High School, Chikkabellikatti. 
+        All Rights Reserved. 
+    </p> 
+
+    <p> 
+        Student Admission Portal 
+    </p> 
+
+</footer> 
+
+
+<script> 
+
+    // Check whether student is logged in 
+
+    const studentData = 
+        localStorage.getItem("student"); 
+
+
+    if (!studentData) { 
+
+        window.location.href = 
+            "login.html"; 
+
+    } 
+
+
+    const student = 
+        JSON.parse(studentData); 
+
+
+    // Welcome message 
+
+    document.getElementById( 
+        "welcomeMessage" 
+    ).textContent = 
+        "Welcome, " + 
+        student.full_name + 
+        "!"; 
+
+
+    // Profile information 
+
+    document.getElementById( 
+        "studentId" 
+    ).textContent = 
+        student.student_id; 
+
+
+    document.getElementById( 
+        "studentName" 
+    ).textContent = 
+        student.full_name; 
+
+
+    document.getElementById( 
+        "studentUsername" 
+    ).textContent = 
+        student.username; 
+
+
+    // Show profile 
+
+    function showProfile() { 
+
+        document.getElementById( 
+            "profileBox" 
+        ).style.display = "block"; 
+
+    } 
+
+
+    // Logout 
+
+    function logout() { 
+
+        localStorage.removeItem("student"); 
+
+        window.location.href = 
+            "login.html"; 
+
+    } 
+
+</script> 
+
+
+</body> 
+
+</html>

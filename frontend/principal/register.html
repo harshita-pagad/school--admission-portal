@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Principal Registration - Govt High School, Chikkabellikatti</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <header>
+        <nav>
+            <div class="logo">
+                <h2>Govt High School, Chikkabellikatti</h2>
+            </div>
+
+            <ul class="nav-links">
+                <li>
+                    <a href="../index.html">Home</a>
+                </li>
+
+                <li>
+                    <a href="login.html">Staff Login</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- PRINCIPAL REGISTRATION -->
+    <main>
+        <section class="section">
+
+            <h1>Principal Registration</h1>
+
+            <p>
+                Create the principal account for Govt High School, Chikkabellikatti.
+            </p>
+
+            <form id="principalRegisterForm" class="form-container">
+
+                <!-- SCHOOL CODE -->
+                <div class="form-group">
+                    <label for="schoolCode">School Code</label>
+
+                    <input
+                        type="text"
+                        id="schoolCode"
+                        value="CKB105"
+                        readonly
+                        required
+                    >
+                </div>
+
+                <!-- PRINCIPAL NAME -->
+                <div class="form-group">
+                    <label for="principalName">Principal Name</label>
+
+                    <input
+                        type="text"
+                        id="principalName"
+                        value="Rajshekhar Ganachari"
+                        readonly
+                        required
+                    >
+                </div>
+
+                <!-- USERNAME -->
+                <div class="form-group">
+                    <label for="principalUsername">Username</label>
+
+                    <input
+                        type="text"
+                        id="principalUsername"
+                        placeholder="Create username"
+                        autocomplete="username"
+                        required
+                    >
+                </div>
+
+                <!-- PASSWORD -->
+                <div class="form-group">
+                    <label for="principalPassword">Password</label>
+
+                    <input
+                        type="password"
+                        id="principalPassword"
+                        placeholder="Create password"
+                        autocomplete="new-password"
+                        required
+                    >
+                </div>
+
+                <!-- CONFIRM PASSWORD -->
+                <div class="form-group">
+                    <label for="confirmPassword">Confirm Password</label>
+
+                    <input
+                        type="password"
+                        id="confirmPassword"
+                        placeholder="Confirm password"
+                        autocomplete="new-password"
+                        required
+                    >
+                </div>
+
+                <!-- REGISTER BUTTON -->
+                <button type="submit" class="btn">
+                    Register Principal
+                </button>
+
+            </form>
+
+            <p id="registerMessage"></p>
+
+            <p>
+                Already have a principal account?
+                <a href="login.html">Login here</a>
+            </p>
+
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>
+            &copy; 2026 Govt High School, Chikkabellikatti.
+            All Rights Reserved.
+        </p>
+    </footer>
+
+    <script src="../js/script.js"></script>
+
+</body>
+</html>

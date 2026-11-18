@@ -1,0 +1,405 @@
+<!DOCTYPE html> 
+
+<html lang="en"> 
+
+<head> 
+
+
+<meta charset="UTF-8"> 
+
+<meta name="viewport" 
+      content="width=device-width, initial-scale=1.0"> 
+
+<title>Admission Form - Govt High School, Chikkabellikatti</title> 
+
+<link rel="stylesheet" 
+      href="../css/style.css"> 
+
+
+</head> 
+
+<body> 
+
+
+<!-- ================= NAVIGATION ================= --> 
+
+<header> 
+
+    <nav> 
+
+        <div class="logo"> 
+
+            <h2> 
+                Govt High School, Chikkabellikatti 
+            </h2> 
+
+        </div> 
+
+
+        <ul class="nav-links"> 
+
+            <li> 
+                <a href="../index.html"> 
+                    Home 
+                </a> 
+            </li> 
+
+            <li> 
+                <a href="dashboard.html"> 
+                    Dashboard 
+                </a> 
+            </li> 
+
+            <li> 
+                <a href="admission.html"> 
+                    Admission 
+                </a> 
+            </li> 
+
+            <li> 
+                <a href="status.html"> 
+                    Status 
+                </a> 
+            </li> 
+
+        </ul> 
+
+    </nav> 
+
+</header> 
+
+
+
+<!-- ================= ADMISSION FORM ================= --> 
+
+<main> 
+
+    <section class="section"> 
+
+        <h1> 
+            Student Admission Form 
+        </h1> 
+
+        <p> 
+            Enter your details carefully and submit your application. 
+        </p> 
+
+
+        <form 
+            id="admissionForm" 
+            enctype="multipart/form-data" 
+        > 
+
+
+            <!-- ================= BASIC DETAILS ================= --> 
+
+            <h2> 
+                Student Details 
+            </h2> 
+
+
+            <!-- FULL NAME --> 
+
+            <div class="form-group"> 
+
+                <label for="fullName"> 
+                    Full Name 
+                </label> 
+
+                <input 
+                    type="text" 
+                    id="fullName" 
+                    name="fullName" 
+                    placeholder="Enter student's full name" 
+                    required 
+                > 
+
+            </div> 
+
+
+
+            <!-- DATE OF BIRTH --> 
+
+            <div class="form-group"> 
+
+                <label for="dob"> 
+                    Date of Birth 
+                </label> 
+
+                <input 
+                    type="date" 
+                    id="dob" 
+                    name="dob" 
+                    required 
+                > 
+
+            </div> 
+
+
+
+            <!-- GENDER --> 
+
+            <div class="form-group"> 
+
+                <label for="gender"> 
+                    Gender 
+                </label> 
+
+                <select 
+                    id="gender" 
+                    name="gender" 
+                    required 
+                > 
+
+                    <option value=""> 
+                        Select Gender 
+                    </option> 
+
+                    <option value="Male"> 
+                        Male 
+                    </option> 
+
+                    <option value="Female"> 
+                        Female 
+                    </option> 
+
+                    <option value="Other"> 
+                        Other 
+                    </option> 
+
+                </select> 
+
+            </div> 
+
+
+
+            <!-- FATHER NAME --> 
+
+            <div class="form-group"> 
+
+                <label for="fatherName"> 
+                    Father's Name 
+                </label> 
+
+                <input 
+                    type="text" 
+                    id="fatherName" 
+                    name="fatherName" 
+                    placeholder="Enter father's name" 
+                    required 
+                > 
+
+            </div> 
+
+
+
+            <!-- APPLYING CLASS --> 
+
+            <div class="form-group"> 
+
+                <label for="classApplying"> 
+                    Applying for Class 
+                </label> 
+
+                <select 
+                    id="classApplying" 
+                    name="classApplying" 
+                    required 
+                > 
+
+                    <option value=""> 
+                        Select Class 
+                    </option> 
+
+                    <option value="1"> 
+                        Class 1 
+                    </option> 
+
+                    <option value="2"> 
+                        Class 2 
+                    </option> 
+
+                    <option value="3"> 
+                        Class 3 
+                    </option> 
+
+                    <option value="4"> 
+                        Class 4 
+                    </option> 
+
+                    <option value="5"> 
+                        Class 5 
+                    </option> 
+
+                    <option value="6"> 
+                        Class 6 
+                    </option> 
+
+                    <option value="7"> 
+                        Class 7 
+                    </option> 
+
+                    <option value="8"> 
+                        Class 8 
+                    </option> 
+
+                    <option value="9"> 
+                        Class 9 
+                    </option> 
+
+                    <option value="10"> 
+                        Class 10 
+                    </option> 
+
+                </select> 
+
+            </div> 
+
+
+
+            <!-- ================= DOCUMENT DETAILS ================= --> 
+
+            <h2> 
+                Documents 
+            </h2> 
+
+            <p> 
+                If a document is not available, enter 
+                <strong>N/A</strong> where applicable. 
+            </p> 
+
+
+
+            <!-- AADHAAR NUMBER --> 
+
+            <div class="form-group"> 
+
+                <label for="aadhaarNumber"> 
+                    Aadhaar Number 
+                </label> 
+
+                <input 
+                    type="text" 
+                    id="aadhaarNumber" 
+                    name="aadhaarNumber" 
+                    placeholder="Enter Aadhaar number or N/A" 
+                    maxlength="20" 
+                > 
+
+            </div> 
+
+
+
+            <!-- STUDENT PHOTO --> 
+
+            <div class="form-group"> 
+
+                <label for="studentPhoto"> 
+                    Student Photo 
+                </label> 
+
+                <input 
+                    type="file" 
+                    id="studentPhoto" 
+                    name="student_photo" 
+                    accept="image/*" 
+                > 
+
+                <small> 
+                    Upload the student's photo. 
+                    Leave empty if unavailable. 
+                </small> 
+
+            </div> 
+
+
+
+            <!-- AADHAAR DOCUMENT --> 
+
+            <div class="form-group"> 
+
+                <label for="aadhaarDocument"> 
+                    Aadhaar Document 
+                </label> 
+
+                <input 
+                    type="file" 
+                    id="aadhaarDocument" 
+                    name="aadhaar_document" 
+                    accept="image/*,.pdf" 
+                > 
+
+                <small> 
+                    Upload Aadhaar card image or PDF. 
+                    Leave empty if unavailable. 
+                </small> 
+
+            </div> 
+
+
+
+            <!-- BIRTH CERTIFICATE --> 
+
+            <div class="form-group"> 
+
+                <label for="birthCertificate"> 
+                    Birth Certificate 
+                </label> 
+
+                <input 
+                    type="file" 
+                    id="birthCertificate" 
+                    name="birth_certificate" 
+                    accept="image/*,.pdf" 
+                > 
+
+                <small> 
+                    Upload the birth certificate. 
+                    Leave empty if unavailable. 
+                </small> 
+
+            </div> 
+
+
+
+            <!-- ================= SUBMIT ================= --> 
+
+            <button 
+                type="submit" 
+                class="btn" 
+                id="admissionSubmitBtn" 
+            > 
+                Save Changes 
+            </button>    
+
+        </form> 
+
+    </section> 
+
+</main> 
+
+
+
+<!-- ================= FOOTER ================= --> 
+
+<footer> 
+
+    <p> 
+        &copy; 2026 Govt High School, Chikkabellikatti. 
+        All Rights Reserved. 
+    </p> 
+
+    <p> 
+        Student Admission Portal 
+    </p> 
+
+</footer> 
+
+
+
+<script src="../js/script.js"></script> 
+
+
+</body> 
+
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html> 
+
+<html lang="en"> 
+
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+
+<title>Student Record - Teacher Portal</title> 
+
+<link rel="stylesheet" href="../css/style.css"> 
+
+</head> 
+
+<body> 
+
+
+<!-- ================= NAVIGATION ================= --> 
+
+<header> 
+    <nav> 
+
+        <div class="logo"> 
+            <h2>Govt High School, Chikkabellikatti</h2> 
+        </div> 
+
+        <ul class="nav-links"> 
+
+            <li> 
+                <a href="../index.html">Home</a> 
+            </li> 
+
+            <li> 
+                <a href="dashboard.html">Dashboard</a> 
+            </li> 
+
+            <li> 
+                <a href="login.html">Logout</a> 
+            </li> 
+
+        </ul> 
+
+    </nav> 
+</header> 
+
+
+<!-- ================= STUDENT RECORD ================= --> 
+
+<main> 
+
+    <section class="section"> 
+
+        <h1>Student Admission Record</h1> 
+
+        <p> 
+            Review the student's submitted admission information. 
+        </p> 
+
+
+        <!-- ================= STUDENT DETAILS ================= --> 
+    <div class="step"> 
+
+<h3>Student Information</h3> 
+
+<div id="studentDetails"> 
+
+    <p>Loading student information...</p> 
+
+</div> 
+```
+
+</div> 
+
+```
+        <!-- ================= TEACHER REVIEW ================= --> 
+
+        <div class="step"> 
+
+            <h3>Teacher Review</h3> 
+
+            <form id="teacherReviewForm"> 
+
+
+                <!-- SUITABILITY --> 
+
+                <div class="form-group"> 
+
+                    <label for="suitability"> 
+                        Is the student suitable for admission? 
+                    </label> 
+
+                    <select 
+                        id="suitability" 
+                        name="suitability" 
+                        required 
+                    > 
+
+                        <option value=""> 
+                            Select Decision 
+                        </option> 
+
+                        <option value="Suitable"> 
+                            Suitable 
+                        </option> 
+
+                        <option value="Not Suitable"> 
+                            Not Suitable 
+                        </option> 
+
+                        <option value="Needs Clarification"> 
+                            Needs Clarification 
+                        </option> 
+
+                    </select> 
+
+                </div> 
+
+
+                <!-- COMMENTS --> 
+
+                <div class="form-group"> 
+
+                    <label for="teacherComments"> 
+                        Teacher Comments / Clarification 
+                    </label> 
+
+                    <textarea 
+                        id="teacherComments" 
+                        name="teacherComments" 
+                        rows="5" 
+                        placeholder="Enter your comments or clarification" 
+                        required 
+                    ></textarea> 
+
+                </div> 
+
+
+                <!-- SEND TO PRINCIPAL --> 
+
+                <button type="submit" class="btn"> 
+                    Send to Principal 
+                </button> 
+
+            </form> 
+
+        </div> 
+
+    </section> 
+
+</main> 
+
+
+<!-- ================= FOOTER ================= --> 
+
+<footer> 
+
+    <p> 
+        &copy; 2026 Govt High School, Chikkabellikatti. 
+        All Rights Reserved. 
+    </p> 
+
+    <p> 
+        Teacher Admission Portal 
+    </p> 
+
+</footer> 
+
+
+<script src="../js/script.js"></script> 
+
+
+</body> 
+
+</html>

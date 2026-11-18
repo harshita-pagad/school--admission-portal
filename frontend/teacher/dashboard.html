@@ -1,0 +1,234 @@
+<!DOCTYPE html> 
+
+<html lang="en"> 
+
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+
+<title>Teacher Dashboard - Govt High School, Chikkabellikatti</title> 
+
+<link rel="stylesheet" href="../css/style.css"> 
+
+
+</head> 
+
+<body> 
+
+
+<!-- NAVBAR --> 
+<nav class="navbar"> 
+
+    <div class="logo"> 
+        Govt High School, Chikkabellikatti 
+    </div> 
+
+    <div class="nav-links"> 
+
+        <a href="../index.html"> 
+            Home 
+        </a> 
+
+        <a href="dashboard.html"> 
+            Dashboard 
+        </a> 
+
+        <a href="#" onclick="teacherLogout(); return false;"> 
+            Logout 
+        </a> 
+
+    </div> 
+
+</nav> 
+
+
+<!-- MAIN CONTENT --> 
+<div class="container"> 
+
+    <h1> 
+        Teacher Dashboard 
+    </h1> 
+
+    <p> 
+        Review student admission applications and forward 
+        suitable applications to the principal. 
+    </p> 
+
+
+    <!-- DASHBOARD CARDS --> 
+    <div class="steps-container"> 
+
+        <!-- PENDING --> 
+        <div 
+            class="step teacher-card" 
+            id="pendingCard" 
+            title="Click to view pending applications" 
+        > 
+
+            <h3> 
+                Pending Applications 
+            </h3> 
+
+            <p> 
+                Applications waiting for teacher review. 
+            </p> 
+
+            <h2 id="pendingCount"> 
+                0 
+            </h2> 
+
+        </div> 
+
+
+        <!-- REVIEWED --> 
+        <div 
+            class="step teacher-card" 
+            id="reviewedCard" 
+            title="Click to view reviewed applications" 
+        > 
+
+            <h3> 
+                Reviewed Applications 
+            </h3> 
+
+            <p> 
+                Applications already reviewed by the teacher. 
+            </p> 
+
+            <h2 id="reviewedCount"> 
+                0 
+            </h2> 
+
+        </div> 
+
+
+        <!-- SENT TO PRINCIPAL --> 
+        <div 
+            class="step teacher-card" 
+            id="principalCard" 
+            title="Click to view applications sent to principal" 
+        > 
+
+            <h3> 
+                Sent to Principal 
+            </h3> 
+
+            <p> 
+                Suitable applications forwarded to the principal. 
+            </p> 
+
+            <h2 id="principalCount"> 
+                0 
+            </h2> 
+
+        </div> 
+
+    </div> 
+
+
+    <!-- SINGLE SEARCH BAR --> 
+    <div class="application-section"> 
+
+        <h2> 
+            Search Students 
+        </h2> 
+
+        <p> 
+            Search by student ID, name, email, father name, 
+            class or application status. 
+        </p> 
+
+        <input 
+            type="text" 
+            id="teacherStudentSearch" 
+            placeholder="Search students..." 
+            autocomplete="off" 
+        > 
+
+        <p id="teacherSearchResult"> 
+            Showing all applications 
+        </p> 
+
+    </div> 
+
+
+    <!-- STUDENT APPLICATIONS --> 
+    <h2> 
+        Student Applications 
+    </h2> 
+
+
+    <!-- CLASSES 1 - 7 --> 
+    <div class="application-section"> 
+
+        <h2> 
+            Classes 1 - 7 
+        </h2> 
+
+        <div id="classes1to7"> 
+
+            <div class="step"> 
+                Loading applications... 
+            </div> 
+
+        </div> 
+
+    </div> 
+
+
+    <!-- CLASSES 8 - 10 --> 
+    <div class="application-section"> 
+
+        <h2> 
+            Classes 8 - 10 
+        </h2> 
+
+        <div id="classes8to10"> 
+
+            <div class="step"> 
+                Loading applications... 
+            </div> 
+
+        </div> 
+
+    </div> 
+
+
+    <!-- CLASS NOT SUBMITTED --> 
+    <div class="application-section"> 
+
+        <h2> 
+            Class Not Submitted 
+        </h2> 
+
+        <div id="classNotSubmitted"> 
+
+            <div class="step"> 
+                Loading applications... 
+            </div> 
+
+        </div> 
+
+    </div> 
+
+</div> 
+
+
+<!-- FOOTER --> 
+<footer> 
+
+    <p> 
+        © 2026 Govt High School, Chikkabellikatti 
+    </p> 
+
+</footer> 
+
+
+<!-- JAVASCRIPT --> 
+<script src="../js/script.js"></script> 
+
+
+</body> 
+
+</html>

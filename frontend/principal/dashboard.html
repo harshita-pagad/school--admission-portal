@@ -1,0 +1,366 @@
+<!DOCTYPE html> 
+ 
+<html lang="en"> 
+ 
+<head> 
+ 
+ 
+<meta charset="UTF-8"> 
+ 
+<meta name="viewport" 
+      content="width=device-width, initial-scale=1.0"> 
+ 
+<title>Principal Dashboard -Govt High School, Chikkabellikatti</title> 
+<link rel="stylesheet" 
+      href="../css/style.css"> 
+ 
+ 
+</head> 
+ 
+<body> 
+ 
+<!-- ===================================================== --> 
+<!-- NAVIGATION --> 
+<!-- ===================================================== --> 
+ 
+<header> 
+ 
+    <nav> 
+ 
+        <div class="logo"> 
+ 
+            <h2> 
+                Govt High School, Chikkabellikatti 
+            </h2> 
+ 
+        </div> 
+ 
+ 
+        <ul class="nav-links"> 
+ 
+            <li> 
+                <a href="../index.html"> 
+                    Home 
+                </a> 
+            </li> 
+ 
+            <li> 
+                <a href="dashboard.html"> 
+                    Dashboard 
+                </a> 
+            </li> 
+ 
+            <li> 
+                <a href="login.html"> 
+                    Logout 
+                </a> 
+            </li> 
+ 
+        </ul> 
+ 
+    </nav> 
+ 
+</header> 
+ 
+ 
+ 
+<!-- ===================================================== --> 
+<!-- MAIN --> 
+<!-- ===================================================== --> 
+ 
+<main> 
+ 
+    <section class="section"> 
+ 
+ 
+        <!-- ================================================= --> 
+        <!-- TITLE --> 
+        <!-- ================================================= --> 
+ 
+        <h1> 
+            Principal Dashboard 
+        </h1> 
+ 
+        <p> 
+            Review student applications and manage teacher accounts. 
+        </p> 
+ 
+ 
+ 
+        <!-- ================================================= --> 
+        <!-- APPLICATION SUMMARY --> 
+        <!-- ================================================= --> 
+ 
+        <div class="steps-container"> 
+ 
+ 
+            <!-- ================= PENDING ================= --> 
+ 
+            <div 
+                class="step teacher-card" 
+                id="principalPendingCard" 
+                role="button" 
+                tabindex="0" 
+            > 
+ 
+                <h3> 
+                    Pending Applications 
+                </h3> 
+ 
+                <p> 
+                    Applications waiting for principal review. 
+                </p> 
+ 
+                <h2 id="principalPendingCount"> 
+                    0 
+                </h2> 
+ 
+            </div> 
+ 
+ 
+ 
+            <!-- ================= APPROVED ================= --> 
+ 
+            <div 
+                class="step teacher-card" 
+                id="principalApprovedCard" 
+                role="button" 
+                tabindex="0" 
+            > 
+ 
+                <h3> 
+                    Approved 
+                </h3> 
+ 
+                <p> 
+                    Applications approved for admission. 
+                </p> 
+ 
+                <h2 id="principalApprovedCount"> 
+                    0 
+                </h2> 
+ 
+            </div> 
+ 
+ 
+ 
+            <!-- ================= REJECTED ================= --> 
+ 
+            <div 
+                class="step teacher-card" 
+                id="principalRejectedCard" 
+                role="button" 
+                tabindex="0" 
+            > 
+ 
+                <h3> 
+                    Rejected 
+                </h3> 
+ 
+                <p> 
+                    Applications rejected after review. 
+                </p> 
+ 
+                <h2 id="principalRejectedCount"> 
+                    0 
+                </h2> 
+ 
+            </div> 
+ 
+        </div> 
+ 
+ 
+ 
+        <!-- ================================================= --> 
+        <!-- STUDENT APPLICATIONS --> 
+        <!-- ================================================= --> 
+ 
+        <h2> 
+            Student Applications 
+        </h2> 
+ 
+ 
+        <div 
+            id="principalApplications" 
+            class="applications-container" 
+        > 
+ 
+            <div class="step"> 
+ 
+                <h3> 
+                    Loading Applications... 
+                </h3> 
+ 
+                <p> 
+                    Please wait while applications are loaded. 
+                </p> 
+ 
+            </div> 
+ 
+        </div> 
+ 
+ 
+ 
+        <!-- ================================================= --> 
+        <!-- MANAGE TEACHERS --> 
+        <!-- ================================================= --> 
+ 
+        <div class="principal-teacher-section"> 
+ 
+ 
+            <h2> 
+                Manage Teachers 
+            </h2> 
+ 
+            <p> 
+                Create teacher accounts and approve teachers 
+                before they can login. 
+            </p> 
+ 
+ 
+ 
+            <!-- ================================================= --> 
+            <!-- CREATE TEACHER ACCOUNT --> 
+            <!-- ================================================= --> 
+ 
+            <div class="step teacher-form-card"> 
+ 
+                <h3> 
+                    Create Teacher Account 
+                </h3> 
+ 
+ 
+                <form id="createTeacherForm"> 
+ 
+ 
+                    <!-- TEACHER NAME --> 
+ 
+                    <div class="form-group"> 
+ 
+                        <label for="teacherName"> 
+                            Teacher Name 
+                        </label> 
+ 
+                        <input 
+                            type="text" 
+                            id="teacherName" 
+                            placeholder="Enter teacher name" 
+                            required 
+                        > 
+ 
+                    </div> 
+ 
+ 
+ 
+                    <!-- USERNAME --> 
+ 
+                    <div class="form-group"> 
+ 
+                        <label for="teacherUsername"> 
+                            Username 
+                        </label> 
+ 
+                        <input 
+                            type="text" 
+                            id="teacherUsername" 
+                            placeholder="Enter username" 
+                            required 
+                        > 
+ 
+                    </div> 
+ 
+ 
+ 
+                    <!-- PASSWORD --> 
+ 
+                    <div class="form-group"> 
+ 
+                        <label for="teacherPassword"> 
+                            Password 
+                        </label> 
+ 
+                        <input 
+                            type="password" 
+                            id="teacherPassword" 
+                            placeholder="Enter password" 
+                            required 
+                        > 
+ 
+                    </div> 
+ 
+ 
+ 
+                    <!-- CREATE BUTTON --> 
+ 
+                    <button 
+                        type="submit" 
+                        class="btn" 
+                    > 
+                        Create Teacher 
+                    </button> 
+ 
+ 
+                </form> 
+ 
+            </div> 
+ 
+ 
+ 
+            <!-- ================================================= --> 
+            <!-- TEACHER ACCOUNTS --> 
+            <!-- ================================================= --> 
+ 
+            <div class="step"> 
+ 
+                <h3> 
+                    Teacher Accounts 
+                </h3> 
+ 
+ 
+                <div id="teacherList"> 
+ 
+                    <p> 
+                        Loading teachers... 
+                    </p> 
+ 
+                </div> 
+ 
+            </div> 
+ 
+ 
+        </div> 
+ 
+ 
+    </section> 
+ 
+</main> 
+ 
+ 
+ 
+<!-- ===================================================== --> 
+<!-- FOOTER --> 
+<!-- ===================================================== --> 
+ 
+<footer> 
+ 
+    <p> 
+        © 2026 Govt High School, Chikkabellikatti 
+    </p> 
+ 
+    <p> 
+        Principal Admission Portal 
+    </p> 
+ 
+</footer> 
+ 
+ 
+ 
+<!-- ===================================================== --> 
+<!-- JAVASCRIPT --> 
+<!-- ===================================================== --> 
+ 
+<script src="../js/script.js"></script> 
+ 
+</body> 
+</html>
+
